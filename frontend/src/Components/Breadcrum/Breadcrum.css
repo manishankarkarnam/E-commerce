@@ -1,0 +1,24 @@
+.breadcrum {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px 50px;
+    color: #5e5e5e;
+}
+
+.breadcrum a {
+    text-decoration: none;
+    color: #5e5e5e;
+}
+
+.breadcrum a:hover {
+    color: #ff4141;
+}
+
+.separator {
+    color: #5e5e5e;
+}
+
+.current {
+    color: #ff4141;
+}

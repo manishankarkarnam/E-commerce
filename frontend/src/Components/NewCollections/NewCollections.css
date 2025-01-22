@@ -1,0 +1,29 @@
+.new_collections{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.new_collections_items{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.new_collections hr{
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: 0;
+    border-top: 3px solid black;
+}
+
+.new_collections h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(247, 117, 117);
+}

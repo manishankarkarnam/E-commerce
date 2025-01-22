@@ -1,0 +1,135 @@
+.productdisplay {
+    display: flex;
+    margin: 0px 100px;
+    gap: 40px;
+}
+
+.productdisplay-left {
+    display: flex;
+    gap: 12px;
+}
+
+.productdisplay-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.productdisplay-img-list img {
+    height: 120px;
+    width: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.productdisplay-main-img {
+    width: 450px;
+    height: 550px;
+    object-fit: cover;
+}
+
+.productdisplay-right {
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.productdisplay-right h1 {
+    color: #3d3d3d;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.productdisplay-right-stars {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    gap: 5px;
+    color: #1c1c1c;
+    font-size: 14px;
+}
+
+.productdisplay-right-stars img {
+    height: 16px;
+}
+
+.productdisplay-right-prices {
+    display: flex;
+    margin: 25px 0px;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.productdisplay-right-price-old {
+    color: #818181;
+    text-decoration: line-through;
+}
+
+.productdisplay-right-price-new {
+    color: #ff4141;
+}
+
+.productdisplay-right-size h1 {
+    margin-top: 35px;
+    color: #656565;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.productdisplay-right-sizes {
+    display: flex;
+    margin: 20px 0px;
+    gap: 15px;
+}
+
+.productdisplay-right-sizes div {
+    padding: 14px 20px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.productdisplay-right-sizes div:hover {
+    background: #e7e5e5;
+}
+
+.productdisplay-right button {
+    padding: 15px 30px;
+    width: 180px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: #ff4141;
+    margin: 25px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.productdisplay-right-category {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.productdisplay-right-description {
+    margin-top: 10px;
+    color: #656565;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.productdisplay-right-sizes div.size-selected {
+    background: #ff4141;
+    color: white;
+}
+
+.productdisplay-right button.disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+.productdisplay-right button.disabled:hover {
+    background: #cccccc;
+}

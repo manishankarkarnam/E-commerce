@@ -1,0 +1,118 @@
+.list-product {
+  padding: 2rem;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.list-product h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 0.5rem;
+}
+
+.list-product table {
+  max-width: 120%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-product th,
+.list-product td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.list-product th {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.list-product tr:hover {
+  background-color: #f1f1f1;
+}
+
+.list-product img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.list-product .available {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.list-product .not-available {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+/* Delete Button Styling */
+.list-product .delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.list-product .delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .list-product {
+    padding: 1rem;
+  }
+
+  .list-product h2 {
+    font-size: 1.5rem;
+  }
+
+  .list-product table,
+  .list-product thead,
+  .list-product tbody,
+  .list-product th,
+  .list-product td,
+  .list-product tr {
+    display: block;
+  }
+
+  .list-product tr {
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .list-product td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .list-product td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 1rem;
+    width: 45%;
+    padding-right: 1rem;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+    color: #34495e;
+  }
+
+  .list-product th {
+    display: none;
+  }
+}
